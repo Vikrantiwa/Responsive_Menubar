@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/menu.css" />
+    <style>
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">logo</div>
+      <div class="header">
+        <ul class="changeicon">
+          <li>home</li>
+          <li>about us</li>
+          <li>contact</li>
+          <li>profile</li>
+          <li>shdbj</li>
+          <li>hsbcjhs</li>
+        </ul>
+        <div class="icon" onclick="chang(this)">
+          <div class="a">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function chang(x) {
+        x.classList.toggle("change");
+        document.querySelector(".changeicon").classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
